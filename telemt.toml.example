@@ -6,7 +6,8 @@ show_link = ["docker"]
 [general]
 prefer_ipv6 = false
 fast_mode = true
-use_middle_proxy = false
+use_middle_proxy = true
+ad_tag = "44ce5fa28d9678b6a875d59d580fd021"
 
 [general.modes]
 classic = false
@@ -19,7 +20,7 @@ listen_addr_ipv4 = "0.0.0.0"
 listen_addr_ipv6 = "::"
 
 [censorship]
-tls_domain = "1c.ru"
+tls_domain = "www.microsoft.com"
 mask = true
 mask_port = 443
 fake_cert_len = 2048
