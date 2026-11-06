@@ -1,5 +1,6 @@
-# Скопируйте в telemt.toml и подставьте свой секрет (openssl rand -hex 16).
-# Домен в censorship.tls_domain должен совпадать с правилом HostSNI в traefik/dynamic/tcp.yml.
+﻿# 复制为 telemt.toml 后使用。
+# 使用 `openssl rand -hex 16` 生成密钥，并写入 [access.users]。
+# censorship.tls_domain 必须与 traefik/dynamic/tcp.yml 中的 HostSNI 保持一致。
 
 show_link = ["docker"]
 
@@ -7,7 +8,7 @@ show_link = ["docker"]
 prefer_ipv6 = false
 fast_mode = true
 use_middle_proxy = true
-ad_tag = "44ce5fa28d9678b6a875d59d580fd021"
+ad_tag = "PLACEHOLDER_AD_TAG"
 
 [general.modes]
 classic = false
@@ -30,7 +31,7 @@ replay_check_len = 65536
 ignore_time_skew = false
 
 [access.users]
-docker = "ПОДСТАВЬТЕ_32_СИМВОЛА_HEX"
+docker = "__SECRET_HEX_32__"
 
 [[upstreams]]
 type = "direct"
